@@ -101,35 +101,7 @@
             gap: 20px;
         }
 
-        .item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 15px;
-            border-left: 5px solid #e74c3c;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
 
-        .item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
-        }
-
-        .item:hover::before {
-            left: 100%;
-        }
-
-        .item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
 
         .item h3 {
             color: #2c3e50;
@@ -145,30 +117,7 @@
             font-size: 1em;
         }
 
-        .sizes {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
 
-        .size {
-            background: white;
-            padding: 10px 18px;
-            border-radius: 25px;
-            border: 2px solid #e0e0e0;
-            font-weight: bold;
-            color: #e74c3c;
-            transition: all 0.3s ease;
-            font-size: 1em;
-        }
-
-        .size:hover {
-            border-color: #e0e0e0;
-            background: white;
-            color: #e74c3c;
-            transform: none;
-        }
 
         .order-section {
             background: linear-gradient(135deg, #3498db, #2980b9);
@@ -365,104 +314,63 @@
             <div class="category">
                 <h2>🍕 PIZZAS</h2>
                 <div class="items">
-                    <div class="item">
-                        <h3>Calabresa Paulista</h3>
-                        <p class="description">Calabresa, cebola, azeitonas e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 27,00</span>
-                            <span class="size">G (8 fatias) - R$ 35,00</span>
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <h3>Calabresa com Catupiry</h3>
-                        <p class="description">Calabresa, catupiry, cebola, azeitonas e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 34,00</span>
-                            <span class="size">G (8 fatias) - R$ 44,00</span>
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <h3>Calabresa</h3>
-                        <p class="description">Mussarela, calabresa, cebola, azeitona e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 32,00</span>
-                            <span class="size">G (8 fatias) - R$ 42,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Frango com Requeijão</h3>
-                        <p class="description">Frango, mussarela, requeijão, milho, azeitona e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 32,00</span>
-                            <span class="size">G (8 fatias) - R$ 42,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Frango</h3>
-                        <p class="description">Frango, mussarela, milho, azeitona e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 32,00</span>
-                            <span class="size">G (8 fatias) - R$ 42,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>4 Queijos</h3>
-                        <p class="description">Mussarela, queijo coalho, parmesão e requeijão</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 32,00</span>
-                            <span class="size">G (8 fatias) - R$ 42,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Frango com Catupiry</h3>
-                        <p class="description">Frango, mussarela, catupiry, bacon e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 34,00</span>
-                            <span class="size">G (8 fatias) - R$ 47,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Carne Seca</h3>
-                        <p class="description">Mussarela, carne seca, bacon e cebola</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 36,00</span>
-                            <span class="size">G (8 fatias) - R$ 49,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Carne Seca Maluca</h3>
-                        <p class="description">Carne seca, mussarela bacon cebola e batata palha.</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 38,00</span>
-                            <span class="size">G (8 fatias) - R$ 55,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Portuguesa</h3>
-                        <p class="description">Presunto, cebola, ervilhas, ovos e mussarela</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 34,00</span>
-                            <span class="size">G (8 fatias) - R$ 47,00</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <h3>Moda da Casa</h3>
-                        <p class="description">Mussarela, frango desfiado, bacon, milho e orégano</p>
-                        <div class="sizes">
-                            <span class="size">M (6 fatias) - R$ 34,00</span>
-                            <span class="size">G (8 fatias) - R$ 47,00</span>
-                        </div>
-                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Calabresa Paulista</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Calabresa, cebola, azeitonas e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 27,00 | G (8 fatias) - R$ 35,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Calabresa com Catupiry</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Calabresa, catupiry, cebola, azeitonas e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 34,00 | G (8 fatias) - R$ 44,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Calabresa</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Mussarela, calabresa, cebola, azeitona e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 32,00 | G (8 fatias) - R$ 42,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Frango com Requeijão</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Frango, mussarela, requeijão, milho, azeitona e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 32,00 | G (8 fatias) - R$ 42,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Frango</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Frango, mussarela, milho, azeitona e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 32,00 | G (8 fatias) - R$ 42,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">4 Queijos</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Mussarela, queijo coalho, parmesão e requeijão</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 32,00 | G (8 fatias) - R$ 42,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Frango com Catupiry</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Frango, mussarela, catupiry, bacon e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 34,00 | G (8 fatias) - R$ 47,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Carne Seca</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Mussarela, carne seca, bacon e cebola</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 36,00 | G (8 fatias) - R$ 49,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Carne Seca Maluca</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Carne seca, mussarela bacon cebola e batata palha.</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 38,00 | G (8 fatias) - R$ 55,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Portuguesa</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Presunto, cebola, ervilhas, ovos e mussarela</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 34,00 | G (8 fatias) - R$ 47,00</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <h3 style="margin-bottom: 5px;">Moda da Casa</h3>
+                            <p style="color: #666; margin-bottom: 5px;">Mussarela, frango desfiado, bacon, milho e orégano</p>
+                            <p style="font-weight: bold; color: #e74c3c;">M (6 fatias) - R$ 34,00 | G (8 fatias) - R$ 47,00</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
